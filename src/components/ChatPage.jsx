@@ -6,7 +6,7 @@ import { getPromptForTopic } from '../utils/prompts';
 import formatPlanText from '../utils/formatPlanText';
 import styled from 'styled-components';
 import BGMOBILE from '../assets/BGMOBILE.webp';
-import AerisImage from '../assets/Aerismini.png'; 
+import AerisImage from '../assets/Aeris.png'; 
 
 // Importando a fonte Poppins do Google Fonts
 const FontImport = styled.div`
@@ -16,7 +16,7 @@ const FontImport = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 90vh;
   background-color: #f0f0f0;
   padding: 10px;
   font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins globalmente */
