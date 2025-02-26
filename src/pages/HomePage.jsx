@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import backgroundVideo from '../assets/BGAURORAFRONT.mp4';
+import backgroundVideo from '../assets/BGAURORAFRONT.webm';
 import BGFRONT from '../assets/BGFRONT.png';
 
 // Carregando a fonte Share Tech Mono do Google Fonts

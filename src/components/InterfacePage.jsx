@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import auroraimg from '../assets/auroraimg.png';
-import backgroundVideo from '../assets/BG.mp4';
+import backgroundVideo from '../assets/BG.webm';
 import Section from '../components/section';
 
 // Estilos do container principal
