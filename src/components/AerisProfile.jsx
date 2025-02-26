@@ -20,7 +20,6 @@ const AerisImageWrapper = styled.div`
 const AerisImg = styled.img`
   width: 100px; // Forçando o tamanho da imagem
   height: 100px; // Forçando o tamanho da imagem
-  object-fit: cover;
   border-radius: 50%; // Garantindo que a imagem seja redonda
 `;
 
