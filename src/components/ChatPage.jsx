@@ -6,10 +6,7 @@ import { getPromptForTopic } from '../utils/prompts';
 import formatPlanText from '../utils/formatPlanText';
 import styled from 'styled-components';
 import BGMOBILE from '../assets/BGMOBILE.webp';
-import { AerisProfileComponent } from './AerisProfile';
-
-
-
+import AerisImage from '../assets/Aerismini.png'; 
 
 // Importando a fonte Poppins do Google Fonts
 const FontImport = styled.div`
@@ -97,6 +94,28 @@ const Button = styled.button`
   }
 `;
 
+const AerisProfile = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+const AerisImageWrapper = styled.div`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+`;
+
+const AerisImg = styled.img`
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; // Garantindo que a imagem seja redonda
+`;
 
 
 export const ChatPage = () => {
@@ -159,7 +178,11 @@ export const ChatPage = () => {
       <Container>
         <ChatContainer ref={chatContainerRef}>
           {/* Adicionando a foto da Aeris no início do chat */}
-          <AerisProfileComponent />
+       <AerisProfile>
+           <AerisImageWrapper>
+             <AerisImg src={AerisImage} alt="Aeris" />
+           </AerisImageWrapper>
+         </AerisProfile>
           {messages.map((msg, index) => (
             <Message
               key={index}
