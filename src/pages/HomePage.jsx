@@ -93,7 +93,7 @@ const PresentationText = styled(motion.div)`
 `;
 
 export const HomePage = () => {
-  const presentationMessage = "Olá! Eu sou a Aires, sua tutora de ensino. Estou aqui para guiar você em sua jornada de aprendizado. Vamos começar?";
+  const presentationMessage = "Olá! Eu sou a Aeris, sua tutora de ensino. Estou aqui para guiar você em sua jornada de aprendizado. Vamos começar?";
 
   return (
     <>
