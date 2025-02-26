@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import AerisImage from '../assets/Aeris.png'; // Importando a imagem da Aeris
+import AerisImage from '../assets/Aerismini.png'; // Importando a imagem da Aeris
 
 const AerisProfile = styled.div`
   display: flex;
