@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 import BGBUTTON from '../assets/BGBUTTON.jpg';
-import { BookOpen, GraduationCap, Lightbulb, HelpCircle } from 'lucide-react';
+import { BookOpen, GraduationCap, Lightbulb, HelpCircle, Code, Briefcase, Globe } from 'lucide-react';
 
 // Animação de ponto de luz girando ao redor do botão
 const rotateGlow = keyframes`
@@ -116,6 +116,38 @@ export function Section() {
             <Glow />
             <Button onClick={() => (window.location.href = '/chat/duvidas')}>
               <HelpCircle /> Tirar Dúvidas
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/programacao')}>
+              <Code /> Programação
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/negocios')}>
+              <Briefcase /> Negócios
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/idiomas')}>
+              <Globe /> Idiomas
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/libras')}>
+              <Globe /> Libras
             </Button>
           </ButtonWrapper>
         </motion.div>
