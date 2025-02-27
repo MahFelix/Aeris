@@ -87,6 +87,38 @@ export function Section() {
   return (
     <ContainerSection>
       <ButtonContainer>
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/idiomas')}>
+              <Globe /> Idiomas
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/libras')}>
+              <Globe /> Libras
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/programacao')}>
+              <Code /> Programação
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>
+          <ButtonWrapper>
+            <Glow />
+            <Button onClick={() => (window.location.href = '/chat/negocios')}>
+              <Briefcase /> Negócios
+            </Button>
+          </ButtonWrapper>
+        </motion.div>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
           <ButtonWrapper>
             <Glow />
@@ -116,38 +148,6 @@ export function Section() {
             <Glow />
             <Button onClick={() => (window.location.href = '/chat/duvidas')}>
               <HelpCircle /> Tirar Dúvidas
-            </Button>
-          </ButtonWrapper>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }}>
-          <ButtonWrapper>
-            <Glow />
-            <Button onClick={() => (window.location.href = '/chat/programacao')}>
-              <Code /> Programação
-            </Button>
-          </ButtonWrapper>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>
-          <ButtonWrapper>
-            <Glow />
-            <Button onClick={() => (window.location.href = '/chat/negocios')}>
-              <Briefcase /> Negócios
-            </Button>
-          </ButtonWrapper>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
-          <ButtonWrapper>
-            <Glow />
-            <Button onClick={() => (window.location.href = '/chat/idiomas')}>
-              <Globe /> Idiomas
-            </Button>
-          </ButtonWrapper>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
-          <ButtonWrapper>
-            <Glow />
-            <Button onClick={() => (window.location.href = '/chat/libras')}>
-              <Globe /> Libras
             </Button>
           </ButtonWrapper>
         </motion.div>

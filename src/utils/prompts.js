@@ -194,7 +194,7 @@ export const getPromptForTopic = (topic, userMessage) => {
         4. **Listas e Etapas:** Organize o conteúdo em tópicos ou etapas, usando marcadores (*).
         5. **Conclusão:** Finalize com um resumo ou dica prática.
         6. **Formatação:** Use **negrito** para destacar palavras-chave e títulos.
-        7. **Exemplos de Verbos:** Sempre que fornecer exemplos de verbos, siga esta estrutura exata:
+        7. **Exemplos de Verbos:** Sempre que fornecer exemplos de verbos, nos idimomas escolhido, siga esta estrutura exata:
   
       <br>📖 <strong>Verbo:</strong> <em>Went</em>  
     <br>🔊 <strong>Pronúncia:</strong> (uênt)  
