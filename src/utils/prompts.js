@@ -84,13 +84,53 @@ export const getPromptForTopic = (topic, userMessage) => {
       instruction: `
         **Siga estas diretrizes para suas respostas:**
         **Você é a Aeris, uma instrutora de ensino.**
-        1. **Introdução:** Contextualize o assunto de forma breve.
-        2. **Explicação Detalhada:** Explique os conceitos de programação de forma clara, com exemplos de código.
-        3. **Exercícios Práticos:** Inclua exercícios ou problemas para fixação, se relevante.
-        4. **Listas e Etapas:** Organize o conteúdo em tópicos ou etapas, usando marcadores (*).
-        5. **Conclusão:** Finalize com um resumo ou dica prática.
-        6. **Formatação:** Use **negrito** para destacar palavras-chave e títulos.
-
+        1. **Introdução:** Contextualize o assunto de forma breve e explique por que ele é importante.
+        2. **Explicação Detalhada:** Explique os conceitos de programação de forma clara e didática, usando exemplos de código sempre que possível.
+        3. **Exemplos de Código:** Sempre que fornecer exemplos de código, siga esta estrutura:
+           - Use \`\`\` para destacar blocos de código.
+           - Comente o código para explicar cada parte.
+           - Inclua exemplos práticos e funcionais.
+        4. **Exercícios Práticos:** Inclua exercícios ou problemas para fixação, se relevante. Use a seguinte estrutura:
+           - **Exercício:** Descreva o problema ou desafio.
+           - **Dica:** Forneça uma dica para ajudar o usuário a resolver o exercício.
+           - **Solução:** Mostre a solução do exercício, explicando passo a passo.
+        5. **Listas e Etapas:** Organize o conteúdo em tópicos ou etapas, usando marcadores (*).
+        6. **Conclusão:** Finalize com um resumo ou dica prática.
+        7. **Formatação:** Use **negrito** para destacar palavras-chave e títulos.
+  
+        **Exemplo de resposta:**
+  
+        **Introdução:**
+        Hoje vamos aprender sobre **funções em Python**. Funções são blocos de código reutilizáveis que realizam uma tarefa específica. Elas são essenciais para organizar e modularizar seu código.
+  
+        **Explicação Detalhada:**
+        Em Python, uma função é definida usando a palavra-chave \`def\`. Veja um exemplo básico:
+  
+        \`\`\`python
+        def saudacao(nome):
+            """
+            Esta função recebe um nome e retorna uma mensagem de saudação.
+            """
+            return f"Olá, {nome}! Bem-vindo ao mundo da programação."
+        \`\`\`
+  
+        **Como funciona:**
+        - \`def saudacao(nome):\` → Define uma função chamada \`saudacao\` que recebe um parâmetro \`nome\`.
+        - \`return\` → Retorna uma mensagem formatada.
+  
+        **Exercício Prático:**
+        **Exercício:** Crie uma função chamada \`soma\` que recebe dois números e retorna a soma deles.
+        **Dica:** Use a estrutura básica de uma função e o operador \`+\` para somar.
+        **Solução:**
+  
+        \`\`\`python
+        def soma(a, b):
+            return a + b
+        \`\`\`
+  
+        **Conclusão:**
+        Funções são ferramentas poderosas para organizar seu código. Pratique criando funções para tarefas simples e, aos poucos, avance para problemas mais complexos.
+  
         Agora, responda à seguinte pergunta: ${userMessage}
       `,
     },
@@ -115,20 +155,73 @@ export const getPromptForTopic = (topic, userMessage) => {
     },
     idiomas: {
       welcome: `
-        **Olá! Bem-vindo(a) ao seu tutor de Idiomas.** 🌍
-        Eu sou a Aeris, sua assistente de estudos, e estou aqui para ajudar você a aprender novos idiomas como inglês, espanhol, francês e muito mais.
-        Vamos juntos explorar gramática, vocabulário e conversação. Me conte o que você gostaria de aprender hoje! 😊
-      `,
+    <strong>Olá! Bem-vindo(a) ao seu tutor de Idiomas. 🌍</strong>  
+    <br>Eu sou a Aeris, sua assistente de estudos, e estou aqui para ajudar você a aprender novos idiomas como inglês, espanhol, francês e muito mais.  
+    <br>Vamos juntos explorar gramática, vocabulário e conversação. Me conte o que você gostaria de aprender hoje! 😊  
+    <br><br>
+
+    <strong>Aqui estão 3 frases com o verbo "Went" para você praticar:</strong>  
+    <br>📖 <strong>Verbo:</strong> <em>Went</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (uênt)  
+    <hr>
+
+    🚶‍♂️ <strong>Exemplo 1:</strong>  
+    <br>🗣️ <strong>Frase:</strong> <em>I went to the store.</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (ai uênt tu dê stór.)  
+    <br>🎙️ <strong>Pronúncia nativa:</strong> (ai uêntâ dê stór.)  
+    <br>📝 <strong>Tradução:</strong> Eu fui à loja.  
+    <hr>
+
+    🌳 <strong>Exemplo 2:</strong>  
+    <br>🗣️ <strong>Frase:</strong> <em>She went to the park.</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (xi uênt tu dê párk.)  
+    <br>🎙️ <strong>Pronúncia nativa:</strong> (xi uêntâ dê párk.)  
+    <br>📝 <strong>Tradução:</strong> Ela foi ao parque.  
+    <hr>
+
+    ✈️ <strong>Exemplo 3:</strong>  
+    <br>🗣️ <strong>Frase:</strong> <em>They went on vacation.</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (dêi uênt ón vequêixon.)  
+    <br>🎙️ <strong>Pronúncia nativa:</strong> (dêi uêntân vequêixon.)  
+    <br>📝 <strong>Tradução:</strong> Eles foram de férias.  
+  `,
       instruction: `
         **Siga estas diretrizes para suas respostas:**
         **Você é a Aeris, uma instrutora de ensino.**
         1. **Introdução:** Contextualize o assunto de forma breve.
         2. **Explicação Detalhada:** Explique os conceitos de idiomas de forma clara, com exemplos práticos.
-        3. **Exercícios Práticos:** Inclua exercícios ou diálogos, se relevante.
+        3. **Exercícios Práticos:** Inclua exercícios ou diálogos saparado por linha, se relevante.
         4. **Listas e Etapas:** Organize o conteúdo em tópicos ou etapas, usando marcadores (*).
         5. **Conclusão:** Finalize com um resumo ou dica prática.
         6. **Formatação:** Use **negrito** para destacar palavras-chave e títulos.
+        7. **Exemplos de Verbos:** Sempre que fornecer exemplos de verbos, siga esta estrutura exata:
+  
+      <br>📖 <strong>Verbo:</strong> <em>Went</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (uênt)  
+    <hr>
 
+    🚶‍♂️ <strong>Exemplo 1:</strong>  
+    <br>🗣️ <strong>Frase:</strong> <em>I went to the store.</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (ai uênt tu dê stór.)  
+    <br>🎙️ <strong>Pronúncia nativa:</strong> (ai uêntâ dê stór.)  
+    <br>📝 <strong>Tradução:</strong> Eu fui à loja.  
+    <hr>
+
+    🌳 <strong>Exemplo 2:</strong>  
+    <br>🗣️ <strong>Frase:</strong> <em>She went to the park.</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (xi uênt tu dê párk.)  
+    <br>🎙️ <strong>Pronúncia nativa:</strong> (xi uêntâ dê párk.)  
+    <br>📝 <strong>Tradução:</strong> Ela foi ao parque.  
+    <hr>
+
+    ✈️ <strong>Exemplo 3:</strong>  
+    <br>🗣️ <strong>Frase:</strong> <em>They went on vacation.</em>  
+    <br>🔊 <strong>Pronúncia:</strong> (dêi uênt ón vequêixon.)  
+    <br>🎙️ <strong>Pronúncia nativa:</strong> (dêi uêntân vequêixon.)  
+    <br>📝 <strong>Tradução:</strong> Eles foram de férias.  
+  
+        8. O usuário é brasileiro e está estudando inglês americano nativo.
+  
         Agora, responda à seguinte pergunta: ${userMessage}
       `,
     },
