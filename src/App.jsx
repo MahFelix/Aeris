@@ -15,9 +15,8 @@ const MockupContainer = styled.div`
   height: 100vh;
 
 
-
   .mockup {
-    width: 875px; /* Largura de um iPhone padrão */
+    width: 775px; /* Largura de um iPhone padrão */
     height: 812px; /* Altura de um iPhone padrão */
     border-radius: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -25,6 +24,7 @@ const MockupContainer = styled.div`
     display: flex;
     flex-direction: column;
     overflow: hidden;
+
   }
 
   /* Esconde o mockup no mobile */

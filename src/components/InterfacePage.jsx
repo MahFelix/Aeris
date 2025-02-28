@@ -52,7 +52,7 @@ const AuroraImage = styled(motion.img)`
 const MessageBubble = styled(motion.div)`
   position: absolute;
   top: 0%;
-  left: 60%;
+  left: 52%;
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
   padding: 10px;
@@ -64,11 +64,26 @@ const MessageBubble = styled(motion.div)`
   line-height: 1.5;
   font-family: 'Arial', sans-serif;
 
+  @media (max-width: 768px) {
+    position: absolute;
+  top: 0%;
+  left: 60%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 127px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+  }
 `;
 
 // Mensagens que o robô pode "falar"
 const messages = [
-  "Oi, eu sou a Aeris, sua Tutora de ensino! 😊",
+  "Oi, eu sou a Aéris, sua Tutora de ensino! 😊",
   "Vamos aprender juntos? Escolha uma opção abaixo!",
   "Estou aqui para ajudar você a dominar novos conhecimentos!",
   "Que tal começarmos com uma aula de matemática?",
