@@ -1,4 +1,3 @@
-utils/
 
 # Logs
 logs
@@ -10,7 +9,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-utils
 dist
 dist-ssr
 *.local
