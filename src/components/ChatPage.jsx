@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import BGMOBILE from '../assets/BGMOBILE.webp';
 import AerisImage from '../assets/Aeris.png';
 
+
 // Estilos globais
 const GlobalStyles = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
