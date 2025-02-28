@@ -17,7 +17,7 @@ const MockupContainer = styled.div`
 
 
   .mockup {
-    width: 475px; /* Largura de um iPhone padrão */
+    width: 875px; /* Largura de um iPhone padrão */
     height: 812px; /* Altura de um iPhone padrão */
     border-radius: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
