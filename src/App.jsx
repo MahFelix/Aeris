@@ -6,19 +6,19 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./styles/theme";
 import styled from "styled-components";
 
+
 // Mockup do celular
 const MockupContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url();
+
 
 
   .mockup {
     width: 475px; /* Largura de um iPhone padrão */
     height: 812px; /* Altura de um iPhone padrão */
-
     border-radius: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border: 10px solid black;
