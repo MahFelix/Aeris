@@ -1,7 +1,7 @@
 // src/services/geminiService.js
 import axios from 'axios';
 
-const BACKEND_URL = 'http://localhost:5000/api/chat'; // URL do backend
+const BACKEND_URL = 'https://aeris-backend.onrender.com'; // URL do backend
 
 export const sendMessageToGemini = async (prompt, userMessage) => {
   try {
