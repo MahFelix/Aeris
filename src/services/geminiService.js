@@ -1,7 +1,7 @@
 // src/services/geminiService.js
 import axios from 'axios';
 
-const BACKEND_URL = 'https://aeris-backend.onrender.com/api/chat'; // URL correta do backend
+const BACKEND_URL = 'https://aeris-backend.onrender.com/api/chat'; // URL do backend
 
 export const sendMessageToGemini = async (prompt, userMessage) => {
   try {
@@ -10,7 +10,7 @@ export const sendMessageToGemini = async (prompt, userMessage) => {
       BACKEND_URL,
       { prompt, message: userMessage },
       {
-        timeout: 60000, 
+        timeout: 10000, // Timeout de 20 segundos
       }
     );
 
