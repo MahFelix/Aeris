@@ -1,0 +1,31 @@
+{
+  "name": "Aeris-Smart",
+  "short_name": "Aeris",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "Aeris-Smart é seu assistente educacional e terapêutico, ajudando você com dúvidas e apoio emocional.",
+  "icons": [
+    {
+      "src": "/assets/Aeris.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/Aeris.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/Aeris.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/Aeris.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
