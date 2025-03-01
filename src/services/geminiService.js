@@ -10,7 +10,7 @@ export const sendMessageToGemini = async (prompt, userMessage) => {
       BACKEND_URL,
       { prompt, message: userMessage },
       {
-        timeout: 5000,                    
+        timeout:10000,                   
       }
     );
 
