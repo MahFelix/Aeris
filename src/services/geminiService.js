@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BACKEND_URL = 'https://aeris-backend.onrender.com/api/'; // URL do backend
+const BACKEND_URL = 'https://aeris-backend.onrender.com/'; // URL do backend
 
 export const sendMessageToGemini = async (prompt, userMessage) => {
   try {
