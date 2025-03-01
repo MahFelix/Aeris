@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 import BGBUTTON from '../assets/BGBUTTON.jpg';
-import { BookOpen, GraduationCap, Lightbulb, HelpCircle, Code, Briefcase, Globe } from 'lucide-react';
+import { BookOpen, GraduationCap, Lightbulb, HelpCircle, Code, HeartHandshake, Globe } from 'lucide-react';
 
 // Animação de ponto de luz girando ao redor do botão
 const rotateGlow = keyframes`
@@ -87,7 +87,7 @@ export function Section() {
   return (
     <ContainerSection>
       <ButtonContainer>
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.4 }}>
           <ButtonWrapper>
             <Glow />
             <Button onClick={() => (window.location.href = '/chat/idiomas')}>
@@ -114,8 +114,8 @@ export function Section() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }}>
           <ButtonWrapper>
             <Glow />
-            <Button onClick={() => (window.location.href = '/chat/negocios')}>
-              <Briefcase /> Negócios
+            <Button onClick={() => (window.location.href = '/chat/terapeuta')}>
+              <HeartHandshake /> Terapia
             </Button>
           </ButtonWrapper>
         </motion.div>
