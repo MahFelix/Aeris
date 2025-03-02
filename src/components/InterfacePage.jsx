@@ -12,7 +12,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 94%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 
@@ -47,7 +47,7 @@ const AuroraImage = styled(motion.img)`
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin-top: 56px;
+  margin-top: 50px;
   cursor: pointer;
 `;
 
@@ -55,13 +55,13 @@ const AuroraImage = styled(motion.img)`
 const MessageBubble = styled(motion.div)`
   position: absolute;
   top: 0%;
-  left: 52%;
+  left: 60%;
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 127px;
+  max-width: 160px;
   font-size: 16px;
   text-align: left;
   line-height: 1.5;
@@ -76,7 +76,7 @@ const MessageBubble = styled(motion.div)`
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 127px;
+  max-width: 150px;
   font-size: 16px;
   text-align: left;
   line-height: 1.5;
