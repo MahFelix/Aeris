@@ -39,10 +39,7 @@ export const getPromptForTopic = (topic, userMessage) => {
       `,
     },
     gerais: {
-      welcome: ``,
       instruction: `
-
-        Agora, responda à seguinte pergunta: ${userMessage}
       `,
     },
     duvidas: {
