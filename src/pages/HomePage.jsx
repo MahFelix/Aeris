@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import backgroundVideo from '../assets/BGAURORAFRONT.webm';
 import BGFRONT from '../assets/BGFRONT.png';
+import GlobalStyles from '../globalStyles';
 
 // Carregando a fonte Share Tech Mono do Google Fonts
 const FontImport = styled.div`
@@ -97,6 +98,7 @@ export const HomePage = () => {
 
   return (
     <>
+    <GlobalStyles/>
       {/* Importando a fonte Share Tech Mono */}
       <FontImport />
       <Container>
