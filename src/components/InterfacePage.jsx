@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import auroraimg from '../assets/auroraimg.png';
 import backgroundVideo from '../assets/BG.webm';
 import Section from '../components/section';
+import GlobalStyles from '../globalStyles';
 
 // Estilos do container principal
 const Container = styled.div`
@@ -11,9 +12,11 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
+
+  
 `;
 
 // Estilos do vídeo de fundo
@@ -102,6 +105,8 @@ export const InterfacePage = () => {
   }, []);
 
   return (
+    <>
+    <GlobalStyles/>
     <Container>
       {/* Vídeo de fundo */}
       <VideoBackground autoPlay loop muted>
@@ -140,5 +145,6 @@ export const InterfacePage = () => {
         <Section />
       </Content>
     </Container>
+    </>
   );
 };

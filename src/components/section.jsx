@@ -17,27 +17,30 @@ const borderGlow = keyframes`
 `;
 
 const ContainerSection = styled.div`
-  width: 100vw;
-  height: 38vh;
+  width: 100%;
+  height: 100%; /* Ocupa 100% da altura disponível */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 5%; /* Adiciona um padding para evitar que o conteúdo encoste nas bordas */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
 `;
 
 const ButtonContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 5%; /* Espaçamento entre os botões em porcentagem */
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 600px; /* Define uma largura máxima para evitar que os botões fiquem muito grandes */
 `;
 
 const ButtonWrapper = styled.div`
   position: relative;
   display: inline-block;
+  width: 100%; /* Ocupa 100% da largura disponível */
 `;
 
 const Button = styled.button`
@@ -45,7 +48,7 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 15px 20px;
+  padding: 10px 15px; /* Padding ajustado */
   background-image: url(${BGBUTTON});
   background-size: cover;
   background-position: center;
@@ -59,9 +62,9 @@ const Button = styled.button`
   position: relative;
   overflow: hidden;
   animation: ${borderGlow} 2s linear infinite;
-  min-width: 160px; /* Largura mínima para todos os botões */
-  width: 100%; /* Garante que todos os botões tenham a mesma largura */
-  height: 60px; /* Altura fixa para todos os botões */
+  width: 100%; /* Ocupa 100% da largura disponível */
+  height: 100%; /* Ocupa 100% da altura disponível */
+  min-height: 60px; /* Altura mínima para garantir consistência */
 
   &:hover {
     transform: scale(1.05);
