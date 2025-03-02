@@ -25,8 +25,8 @@ export const getPromptForTopic = (topic, userMessage) => {
         Eu sou a Aéris, sua assistente de estudos, e estou aqui para ajudar você a dominar física, química, biologia, matemática avançada e literatura.
         Vamos juntos explorar esses temas de forma clara e detalhada. Me conte o que você gostaria de aprender hoje! 😊
       `,
-      instruction: `
-        **Siga estas diretrizes para suas respostas:** **Seja rápido nas buscas das respostas**
+      comportament: `
+        **Seja rápido nas buscas das respostas**
         **Você é a Aéris, uma instrutora de ensino.**
         1. **Introdução:** Contextualize o assunto de forma breve.
         2. **Explicação Detalhada:** Explique os conceitos de forma clara, com exemplos e aplicações práticas.
@@ -227,5 +227,6 @@ export const getPromptForTopic = (topic, userMessage) => {
   return {
     welcome: prompts[topic]?.welcome || 'Olá! Como posso ajudar você hoje?',
     instruction: prompts[topic]?.instruction || 'Por favor, me conte o que você gostaria de aprender ou saber.',
+    comportament: prompts[topic]?.comportament || 'Por favor, me conte, como está se sentindo hoje?.',
   };
 };
