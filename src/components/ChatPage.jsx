@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { sendMessageToGemini } from '../services/geminiService';
-import { getPromptForTopic } from '../';
+import { getPromptForTopic } from '../utils/prompts.js';
 import formatPlanText from '../utils/formatPlanText';
 import styled from 'styled-components';
 import BGMOBILE from '../assets/BGMOBILE.webp';
