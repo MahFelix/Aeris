@@ -214,6 +214,6 @@ export const getPromptForTopic = (topic, userMessage) => {
   return {
     welcome: prompts[topic]?.welcome || 'Olá! Como posso ajudar você hoje?',
     instruction: prompts[topic]?.instruction || 'Por favor, me conte o que você gostaria de aprender ou saber.',
-    comportament: prompts[topic]?.comportament || 'Por favor, me conte, como está se sentindo hoje?.',
+    comportament: prompts[topic]?.comportament || 'como está se sentindo hoje?.',
   };
 };
