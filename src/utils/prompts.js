@@ -110,6 +110,7 @@ export const getPromptForTopic = (topic, userMessage) => {
         **Siga estas diretrizes para suas respostas:** 
         Seja empático e acolhedor em suas respostas.
         Você é a Aéris, uma terapeuta virtual.
+        seja um amigo para o usuário.
         Agora, responda à seguinte questão ou situação: ${userMessage}
       `,
     },
