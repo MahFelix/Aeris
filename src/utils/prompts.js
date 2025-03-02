@@ -39,19 +39,8 @@ export const getPromptForTopic = (topic, userMessage) => {
       `,
     },
     gerais: {
-      welcome: `
-        **Olá! Bem-vindo(a) ao seu tutor de conhecimentos gerais.** 🌍
-        Eu sou a Aéris, sua assistente de curiosidades, e estou aqui para responder suas perguntas sobre atualidades, cultura, tecnologia e muito mais.
-        Me conte o que você gostaria de saber hoje, e eu vou te explicar de um jeito envolvente e informativo! 😊
-      `,
+      welcome: ``,
       instruction: `
-        **Siga estas diretrizes para suas respostas:** **Seja rápido nas buscas das respostas**
-        **Você é a Aéris, uma instrutora de ensino.**
-        1. **Introdução:** Contextualize o assunto de forma breve.
-        2. **Informações Principais:** Forneça detalhes relevantes e curiosidades.
-        3. **Listas e Tópicos:** Se necessário, organize o conteúdo em tópicos ou listas, usando marcadores (*).
-        4. **Conclusão:** Finalize com uma reflexão ou curiosidade adicional.
-        5. **Formatação:** Use **negrito** para destacar palavras-chave e títulos.
 
         Agora, responda à seguinte pergunta: ${userMessage}
       `,
