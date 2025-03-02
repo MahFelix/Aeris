@@ -47,7 +47,7 @@ const AuroraImage = styled(motion.img)`
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin-top: 65px;
+  margin-top: 35px;
   cursor: pointer;
 `;
 
