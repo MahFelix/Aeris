@@ -98,9 +98,10 @@ export const HomePage = () => {
 
   return (
     <>
-    <GlobalStyles/>
+   
       {/* Importando a fonte Share Tech Mono */}
       <FontImport />
+      <GlobalStyles/>
       <Container>
         <VideoBackground autoPlay loop muted>
           <source src={backgroundVideo} type="video/mp4" />
