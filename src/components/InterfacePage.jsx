@@ -12,7 +12,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 91%;
+  height: 94%;
   position: relative;
   overflow: hidden;
 
@@ -47,7 +47,7 @@ const AuroraImage = styled(motion.img)`
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin-top: 35px;
+  margin-top: 56px;
   cursor: pointer;
 `;
 
