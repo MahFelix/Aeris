@@ -113,12 +113,15 @@ export const getPromptForTopic = (topic, userMessage) => {
       `,
     },
     terapeuta: {
-welcome:`
+welcome:`Aéris (Terapeuta Virtual):
 Olá! 🌟 Eu sou a Aéris, sua terapeuta virtual. 
 Estou aqui para te ouvir, apoiar e ajudar a refletir sobre o que está passando. 
 Conte-me o que está no seu coração, 
-e juntos vamos encontrar clareza e caminhos para seguir em frente.😊 ,`
+e juntos vamos encontrar clareza e caminhos para seguir em frente.😊 ,`,
 
+instruction: `
+   Estou aqui para te ouvir. Conte-me o que está te preocupando, e vamos refletir juntos. 😊
+`,
 },
     idiomas: {
       welcome: `
