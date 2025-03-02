@@ -25,6 +25,7 @@ const ContainerSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
 `;
 
 const ButtonContainer = styled.div`
@@ -58,7 +59,7 @@ const Button = styled.button`
   position: relative;
   overflow: hidden;
   animation: ${borderGlow} 2s linear infinite;
-  min-width: 200px; /* Largura mínima para todos os botões */
+  min-width: 170px; /* Largura mínima para todos os botões */
   width: 100%; /* Garante que todos os botões tenham a mesma largura */
   height: 60px; /* Altura fixa para todos os botões */
 
