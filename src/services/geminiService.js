@@ -11,7 +11,7 @@ export const sendMessageToGemini = async (prompt, userMessage) => {
 
   try {
     // Define o timeout com base no estado da variável isFirstMessage
-    const timeout = isFirstMessage ? 70000 : 5000; // 10s para a primeira mensagem, 5s para as próximas
+    const timeout = isFirstMessage ? 70000 : 10000; // 10s para a primeira mensagem, 5s para as próximas
 
     // Exibe um aviso enquanto a primeira mensagem é enviada
     if (isFirstMessage) {
